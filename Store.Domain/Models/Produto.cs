@@ -1,4 +1,5 @@
-﻿using Store.Domain.ValueObjects;
+﻿using Store.Domain.DomainObjects;
+using Store.Domain.ValueObjects;
 using System;
 
 namespace Store.Domain.Models
@@ -38,9 +39,9 @@ namespace Store.Domain.Models
             Validar();
         }
 
-        public static void Validar()
+        public  void Validar()
         {
-           
+            Validacoes.ValidarSeVazio(Nome, "Nome não informado");
         } 
     }
 }

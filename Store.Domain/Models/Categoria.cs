@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Store.Domain.DomainObjects;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -19,6 +20,11 @@ namespace Store.Domain.Models
         public override string ToString()
         {
             return $"{Nome} - {Id}";
+        }
+
+        public void Validar()
+        {
+            //Validações
         }
     }
 }
