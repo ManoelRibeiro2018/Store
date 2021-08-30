@@ -1,11 +1,30 @@
 {
   "version": 3,
   "targets": {
-    "net5.0": {}
+    "net5.0": {
+      "Store.Domain/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v5.0",
+        "compile": {
+          "bin/placeholder/Store.Domain.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Store.Domain.dll": {}
+        }
+      }
+    }
   },
-  "libraries": {},
+  "libraries": {
+    "Store.Domain/1.0.0": {
+      "type": "project",
+      "path": "../Store.Domain/Store.Domain.csproj",
+      "msbuildProject": "../Store.Domain/Store.Domain.csproj"
+    }
+  },
   "projectFileDependencyGroups": {
-    "net5.0": []
+    "net5.0": [
+      "Store.Domain >= 1.0.0"
+    ]
   },
   "packageFolders": {
     "C:\\Users\\manoel.ribeiro.neto\\.nuget\\packages\\": {},
@@ -43,7 +62,11 @@
       "frameworks": {
         "net5.0": {
           "targetAlias": "net5.0",
-          "projectReferences": {}
+          "projectReferences": {
+            "C:\\Users\\manoel.ribeiro.neto\\source\\repos\\Store\\Store.Domain\\Store.Domain.csproj": {
+              "projectPath": "C:\\Users\\manoel.ribeiro.neto\\source\\repos\\Store\\Store.Domain\\Store.Domain.csproj"
+            }
+          }
         }
       },
       "warningProperties": {

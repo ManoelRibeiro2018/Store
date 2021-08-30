@@ -11,7 +11,7 @@ namespace Store.Domain.Models
     {
         public string Nome { get; private set; }
 
-        public Categoria(string nome, int id)
+        public Categoria(string nome, Guid id)
         {
             Nome = nome;
             this.Id = id;
